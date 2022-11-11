@@ -3,7 +3,7 @@
 
 - [TalkPython repo](https://github.com/talkpython/modern-apis-with-fastapi)
 
-## Ch 3
+## Ch 3: a first api
 
 - [HTTP status codes](https://www.webfx.com/web-development/glossary/http-status-codes/)
 
@@ -14,7 +14,7 @@ $ . venv/bin/activate
 (venv) $ # then nav to localhost
 ```
 
-## Ch 4
+## Ch 4: modern language foundations
 
 - type hints
 - async/await
@@ -27,6 +27,11 @@ $ . venv/bin/activate
     - to avoid breaking changes for async, introduce asgi e.g. uvicorn
 - pydantic classes
 - rich editor support
+
+## Ch 5: a realistic api
+
+
+
 
 
 # setup
