@@ -1,6 +1,7 @@
 
 # notes
-- [TalkPython repo](https://github.com/talkpython/modern-apis-with-fastapi)
+- [course site](https://training.talkpython.fm/courses/getting-started-with-fastapi)
+- [course repo](https://github.com/talkpython/modern-apis-with-fastapi)
 
 ## Ch 3: a first api
 - [HTTP status codes](https://www.webfx.com/web-development/glossary/http-status-codes/)
@@ -36,7 +37,15 @@
     - esp in production, likely have multiple instances/processes running and in-memory cache won't be shared 
     - alternatives might be redis, another db service, etc
 - additional benefit: fewer API calls against budget
+- web server app is a rare places where it's acceptable a blank exception catch (+ logging)
 
+## Ch 7: inbound data
+- to simplify, again choose an in-memory storage for reports in lieu of database
+- [Postman app](https://www.postman.com/) (free + no account needed) is useful for crafting POSTs for local API
+- more nuance to the 20X HTTP code -> more developer-friendly e.g. after POST request
+- make a little client app with `input()` and `localhost` requests
+- jinja templating is a bit unintuitive 
+- OpenAPI (fka Swagger) docs are neat
 
 
 
