@@ -1,18 +1,9 @@
 
 # notes
-
 - [TalkPython repo](https://github.com/talkpython/modern-apis-with-fastapi)
 
 ## Ch 3: a first api
-
 - [HTTP status codes](https://www.webfx.com/web-development/glossary/http-status-codes/)
-
-
-```
-$ . venv/bin/activate
-(venv) $ python ch03/main.py  
-(venv) $ # then nav to localhost
-```
 
 ## Ch 4: modern language foundations
 
@@ -40,6 +31,7 @@ $ . venv/bin/activate
     -  don't end up part of shhgit 
 
 ## Ch 6: error handling and perf
+- use of async/await not well motivated yet here
 - cache response in memory to start; maybe not the most elegant solution, but works
     - esp in production, likely have multiple instances/processes running and in-memory cache won't be shared 
     - alternatives might be redis, another db service, etc
@@ -52,20 +44,25 @@ $ . venv/bin/activate
 
 # setup
 
+- note that current dev machine is old so likely some brittle pieces
+    - may have to skip to docker or something if things fall apart
+
 ## python install
 
-- use pyenv on recommendation
+- try out [pyenv](https://github.com/pyenv/pyenv) for this project on recommendation
+    - set global to latest, point to that one for new venvs
 
 ```
 $ pyenv global 3.11
-$ mkcd talk-python-fastapi
-$ python -m venv venv
+$ # cd into each ch dir 
+$ python3 -m venv venv
+$ . venv/bin/activate
+(venv) $ pip install -r requirements.txt
+(venv) $ python main.py  
 ```
-
 
 ## IDE
 
 - recommend pycharm or vs code 
 - install Python plugin (microsoft) 
-
 
