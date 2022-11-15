@@ -29,6 +29,18 @@ $ . venv/bin/activate
 - rich editor support
 
 ## Ch 5: a realistic api
+- html uses jinja templating 
+    - try a vs code extension? requires different file extensions e.g. `.html.j2` or `.jinja`
+- bunch of layout, css, etc - seems like just lift this content for now
+    - perhaps use something like md -> html in the future
+- interesting that api routers don't require `__init__.py` in directories
+- initial `/weather` api path doesn't work as demonstrated in the lecture recording - requires exact path match (no extra params)
+- managing secrets
+    - `.gitignore` a local json file; could also use env vars
+    -  don't end up part of shhgit 
+- 
+
+
 
 
 

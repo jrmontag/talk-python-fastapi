@@ -3,6 +3,9 @@
 # reference repo: https://github.com/talkpython/modern-apis-with-fastapi
 modern-apis-with-fastapi/
 
+# api keys
+settings.json
+
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos
