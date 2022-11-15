@@ -38,8 +38,12 @@ $ . venv/bin/activate
 - managing secrets
     - `.gitignore` a local json file; could also use env vars
     -  don't end up part of shhgit 
-- 
 
+## Ch 6: error handling and perf
+- cache response in memory to start; maybe not the most elegant solution, but works
+    - esp in production, likely have multiple instances/processes running and in-memory cache won't be shared 
+    - alternatives might be redis, another db service, etc
+- additional benefit: fewer API calls against budget
 
 
 
