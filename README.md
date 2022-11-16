@@ -47,6 +47,32 @@
 - jinja templating is a bit unintuitive 
 - OpenAPI (fka Swagger) docs are neat
 
+## Ch 8: deployment (linux x gunicorn x nginx)
+- spectrum of options for "where should I deploy my python app?"
+    - Platform as a Service (PaaS) e.g. heroku: easy, and good python support; less control, can be expensive
+    - Virtual Private Servier (VPS) e.g. [DigitalOcean](https://m.do.co/c/a4ad5ae8d042), [Linode](talkpython.fm/linode): lower cost; some server maintainance
+        - talkpython stuff runs on Linode
+    - Compute / Platform as a Service e.g. AWS: complicated and expensive
+        - AWS Lightsail: new offering, lower cost, competing with DO and Linode
+- follow along with DO setup
+```
+$ ssh root@<droplet IP>
+# apt update
+# apt upgrade
+# reboot
+```
+- architecture 
+    - nginx (web server, serves html/css, talks to internet)
+    - gunicorn (manages app lifecycle, restart stuck apps)
+    - uvicorn (+ python code; many copies of application (processes), will distribute requests appropriately)
+- follow along with scripts/server_setup.sh 
+    - clone from course repo to start (TODO: come back and get my copy running)
+    - [] read more about the commands/programs used in server_setup.sh
+    - [] read more about the weather.service configuration and systemd
+    - edit weather.nginx IP mapping in-place
+    - SSL setup fails as written, but would be the approach to use after pointing an owned domain to the IP address (after DNS records have updated)
+
+
 
 
 
