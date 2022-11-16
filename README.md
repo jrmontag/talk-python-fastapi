@@ -9,7 +9,9 @@
 ## Ch 4: modern language foundations
 
 - type hints
+    - helpful in editor, still separate from runtime
 - async/await
+    - mostly useful for improving scalability during i/o heavy work like db r/w
 - wsgi vs asgi 
     - write an application in one framework e.g. flask
     - put it on heroku, run under gunicorn, etc
@@ -73,11 +75,7 @@ $ ssh root@<droplet IP>
     - SSL setup fails as written, but would be the approach to use after pointing an owned domain to the IP address (after DNS records have updated)
 
 
-
-
-
-
-# setup
+# course setup
 
 - note that current dev machine is old so likely some brittle pieces
     - may have to skip to docker or something if things fall apart
