@@ -73,6 +73,13 @@ $ ssh root@<droplet IP>
     - [] read more about the weather.service configuration and systemd
     - edit weather.nginx IP mapping in-place
     - SSL setup fails as written, but would be the approach to use after pointing an owned domain to the IP address (after DNS records have updated)
+- posting a report to deployed version
+```
+curl --header "Content-Type: application/json" \
+--request POST \
+--data '{"description":"Sunshine clearing away the snow","location": {"city":"Denver"}}' \
+http://<deployed IP>/api/reports 
+```
 
 
 # course setup
