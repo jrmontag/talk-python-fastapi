@@ -81,6 +81,8 @@ curl --header "Content-Type: application/json" \
 http://<deployed IP>/api/reports 
 ```
 
+Update Oct 2023: moved this app to a new host; now accessible at [http://wx.jrmontag.xyz/](http://wx.jrmontag.xyz/) 
+
 
 # course setup
 
